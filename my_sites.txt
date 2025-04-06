@@ -74,7 +74,7 @@ V:{"_operation": "InsertReplace", "uniqueId": "ORBTL-R-73[port3]", "entityTypes"
 
 
 # CCB (Bristol)
-V:{"_operation": "InsertReplace", "uniqueId": "WRMLY-R-73", "entityTypes": ["router"], "name": "WRMLY-R-73", "_references": [], "uptimeSeconds":259200, "model":"8812", "siteCountry":"GB","siteCity":"Bristol", "siteName":"Aadrman",  "geolocation":{"type": "Feature", "geometry": {"type": "Point", "coordinates": [ -2.607647698707524, 51.44772522075078 ]}} }
+V:{"_operation": "InsertReplace", "uniqueId": "WRMLY-R-73", "entityTypes": ["router"], "name": "WRMLY-R-73", "_references": [], "uptimeSeconds":259200, "model":"8812", "siteCountry":"GB","siteCity":"Bristol", "siteName":"Aardman",  "geolocation":{"type": "Feature", "geometry": {"type": "Point", "coordinates": [ -2.607647698707524, 51.44772522075078 ]}} }
 V:{"_operation": "InsertReplace", "uniqueId": "WRMLY-R-73[port1]", "entityTypes": ["networkinterface"], "name": "port1", "_references": [{"_edgeType": "partOf", "_toUniqueId": "WRMLY-R-73"},{"_edgeType": "contains", "_fromUniqueId": "WRMLY-R-73"}]}
 V:{"_operation": "InsertReplace", "uniqueId": "WRMLY-R-73[port2]", "entityTypes": ["networkinterface"], "name": "port2", "_references": [{"_edgeType": "partOf", "_toUniqueId": "WRMLY-R-73"},{"_edgeType": "contains", "_fromUniqueId": "WRMLY-R-73"}]}
 V:{"_operation": "InsertReplace", "uniqueId": "WRMLY-R-73[port3]", "entityTypes": ["networkinterface"], "name": "port3", "_references": [{"_edgeType": "partOf", "_toUniqueId": "WRMLY-R-73"},{"_edgeType": "contains", "_fromUniqueId": "WRMLY-R-73"}]}
