@@ -1,0 +1,208 @@
+# Summary
+# 1. Port-level connectivity is used.
+# 2. Each device has extra model, uptimeSeconds, siteCountry, siteCity, siteName and geolocation properties.
+# 3. Connectivity is incident to ports via connectedTo edges.
+# 4. The devices are modelled using the device recipe in the documentation.
+
+# HMSR (Portsmouth)
+V:{"_operation": "InsertReplace", "uniqueId": "WRTVL-R-73", "entityTypes": ["router"], "name": "WRTVL-R-73", "_references": [], "uptimeSeconds":259200, "model":"8804", "siteCountry":"GB", "siteCity":"Portsmouth", "siteName":"Neptune", "geolocation":{"type": "Feature", "geometry": {"type": "Point", "coordinates": [ -1.0974285321365755,50.8015879383928 ]}} }
+
+V:{"_operation": "InsertReplace", "uniqueId": "WRTVL-R-73[port1]", "entityTypes": ["networkinterface"], "name": "port1", "_references": [{"_edgeType": "partOf", "_toUniqueId": "WRTVL-R-73"},{"_edgeType": "contains", "_fromUniqueId": "WRTVL-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "WRTVL-R-73[port2]", "entityTypes": ["networkinterface"], "name": "port2", "_references": [{"_edgeType": "partOf", "_toUniqueId": "WRTVL-R-73"},{"_edgeType": "contains", "_fromUniqueId": "WRTVL-R-73"},{"_edgeType": "connectedTo", "note":"3rd Path", "_toUniqueId": "WRMLY-R-73[port3]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "WRTVL-R-73[port3]", "entityTypes": ["networkinterface"], "name": "port3", "_references": [{"_edgeType": "partOf", "_toUniqueId": "WRTVL-R-73"},{"_edgeType": "contains", "_fromUniqueId": "WRTVL-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "ORBTL-R-73[port2]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "WRTVL-R-73[port4]", "entityTypes": ["networkinterface"], "name": "port4", "_references": [{"_edgeType": "partOf", "_toUniqueId": "WRTVL-R-73"},{"_edgeType": "contains", "_fromUniqueId": "WRTVL-R-73"},{"_edgeType": "connectedTo", "note":"LL Path", "_toUniqueId": "MHRWL-R-73[port2]"}]}
+
+V:{"_operation": "InsertReplace", "uniqueId": "PTCSTR-R-73", "entityTypes": ["switch"], "name": "PTCSTR-R-73", "_references": [], "uptimeSeconds":259200, "model":"8804", "siteCountry":"GB", "siteCity":"Portsmouth", "siteName":"Neptune", "geolocation":{"type": "Feature", "geometry": {"type": "Point", "coordinates": [  -1.0974285321365755,50.8015879383928 ]}} }
+
+V:{"_operation": "InsertReplace", "uniqueId": "PTCSTR-R-73[port1]", "entityTypes": ["networkinterface"], "name": "port1", "_references": [{"_edgeType": "partOf", "_toUniqueId": "PTCSTR-R-73"},{"_edgeType": "contains", "_fromUniqueId": "PTCSTR-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "WRTVL-R-73[port1]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "PTCSTR-R-73[port2]", "entityTypes": ["networkinterface"], "name": "port2", "_references": [{"_edgeType": "partOf", "_toUniqueId": "PTCSTR-R-73"},{"_edgeType": "contains", "_fromUniqueId": "PTCSTR-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "CLYDBK-R-73[port2]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "PTCSTR-R-73[port3]", "entityTypes": ["networkinterface"], "name": "port3", "_references": [{"_edgeType": "partOf", "_toUniqueId": "PTCSTR-R-73"},{"_edgeType": "contains", "_fromUniqueId": "PTCSTR-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "CVSHM-R-73[port3]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "PTCSTR-R-73[port4]", "entityTypes": ["networkinterface"], "name": "port4", "_references": [{"_edgeType": "partOf", "_toUniqueId": "PTCSTR-R-73"},{"_edgeType": "contains", "_fromUniqueId": "PTCSTR-R-73"}]}
+
+
+# LKSR (Glasgow)
+V:{"_operation": "InsertReplace", "uniqueId": "MHRWL-R-73", "entityTypes": ["router"], "name": "MHRWL-R-73", "_references": [], "uptimeSeconds":259200, "model":"8804", "siteCountry":"GB","siteCity":"Glasgow", "siteName":"Thales", "geolocation":{"type": "Feature", "geometry": {"type": "Point", "coordinates": [ -4.335813717596636 , 55.86637191613252 ]}} }
+
+V:{"_operation": "InsertReplace", "uniqueId": "MHRWL-R-73[port1]", "entityTypes": ["networkinterface"], "name": "port1", "_references": [{"_edgeType": "partOf", "_toUniqueId": "MHRWL-R-73"},{"_edgeType": "contains", "_fromUniqueId": "MHRWL-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "MHRWL-R-73[port2]", "entityTypes": ["networkinterface"], "name": "port2", "_references": [{"_edgeType": "partOf", "_toUniqueId": "MHRWL-R-73"},{"_edgeType": "contains", "_fromUniqueId": "MHRWL-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "MHRWL-R-73[port3]", "entityTypes": ["networkinterface"], "name": "port3", "_references": [{"_edgeType": "partOf", "_toUniqueId": "MHRWL-R-73"},{"_edgeType": "contains", "_fromUniqueId": "MHRWL-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "STKPT-R-73[port3]"}]}
+
+
+V:{"_operation": "InsertReplace", "uniqueId": "CLYDBK-R-73", "entityTypes": ["switch"], "name": "CLYDBK-R-73", "_references": [], "uptimeSeconds":259200, "model":"8804", "siteCountry":"GB","siteCity":"Glasgow", "siteName":"Thales", "geolocation":{"type": "Feature", "geometry": {"type": "Point", "coordinates": [ -4.335813717596636 , 55.86637191613252 ]}} }
+
+V:{"_operation": "InsertReplace", "uniqueId": "CLYDBK-R-73[port1]", "entityTypes": ["networkinterface"], "name": "port1", "_references": [{"_edgeType": "partOf", "_toUniqueId": "CLYDBK-R-73"},{"_edgeType": "contains", "_fromUniqueId": "CLYDBK-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "MHRWL-R-73[port1]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "CLYDBK-R-73[port2]", "entityTypes": ["networkinterface"], "name": "port2", "_references": [{"_edgeType": "partOf", "_toUniqueId": "CLYDBK-R-73"},{"_edgeType": "contains", "_fromUniqueId": "CLYDBK-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "CLYDBK-R-73[port3]", "entityTypes": ["networkinterface"], "name": "port3", "_references": [{"_edgeType": "partOf", "_toUniqueId": "CLYDBK-R-73"},{"_edgeType": "contains", "_fromUniqueId": "CLYDBK-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "OLDHM-R-73[port3]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "CLYDBK-R-73[port4]", "entityTypes": ["networkinterface"], "name": "port4", "_references": [{"_edgeType": "partOf", "_toUniqueId": "CLYDBK-R-73"},{"_edgeType": "contains", "_fromUniqueId": "CLYDBK-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "ECLS-R-73[port3]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "CLYDBK-R-73[port4]", "entityTypes": ["networkinterface"], "name": "port4", "_references": [{"_edgeType": "partOf", "_toUniqueId": "CLYDBK-R-73"},{"_edgeType": "contains", "_fromUniqueId": "CLYDBK-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "ECLS-R-73[port4]"}]}
+
+
+
+# GMA (Manchester)
+V:{"_operation": "InsertReplace", "uniqueId": "STKPT-R-73", "entityTypes": ["router"], "name": "STKPT-R-73", "_references": [], "uptimeSeconds":259200, "model":"8812", "siteCountry":"GB","siteCity":"Manchester", "siteName":"Beyer Building", "geolocation":{"type": "Feature", "geometry": {"type": "Point", "coordinates": [ -2.2344434437458176, 53.46584593163584 ]}} }
+V:{"_operation": "InsertReplace", "uniqueId": "STKPT-R-73[port1]", "entityTypes": ["networkinterface"], "name": "port1", "_references": [{"_edgeType": "partOf", "_toUniqueId": "STKPT-R-73"},{"_edgeType": "contains", "_fromUniqueId": "STKPT-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "STKPT-R-73[port2]", "entityTypes": ["networkinterface"], "name": "port2", "_references": [{"_edgeType": "partOf", "_toUniqueId": "STKPT-R-73"},{"_edgeType": "contains", "_fromUniqueId": "STKPT-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "STKPT-R-73[port3]", "entityTypes": ["networkinterface"], "name": "port3", "_references": [{"_edgeType": "partOf", "_toUniqueId": "STKPT-R-73"},{"_edgeType": "contains", "_fromUniqueId": "STKPT-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "STKPT-R-73[port4]", "entityTypes": ["networkinterface"], "name": "port4", "_references": [{"_edgeType": "partOf", "_toUniqueId": "STKPT-R-73"},{"_edgeType": "contains", "_fromUniqueId": "STKPT-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "SHUL-R-73[port3]"}]}
+
+V:{"_operation": "InsertReplace", "uniqueId": "ECLS-R-73", "entityTypes": ["switch"], "name": "ECLS-R-73", "_references": [], "uptimeSeconds":259200, "model":"8812", "siteCountry":"GB","siteCity":"Manchester", "siteName":"Beyer Building",  "geolocation":{"type": "Feature", "geometry": {"type": "Point", "coordinates": [ -2.2344434437458176, 53.46584593163584 ]}} }
+V:{"_operation": "InsertReplace", "uniqueId": "ECLS-R-73[port1]", "entityTypes": ["networkinterface"], "name": "port1", "_references": [{"_edgeType": "partOf", "_toUniqueId": "ECLS-R-73"},{"_edgeType": "contains", "_fromUniqueId": "ECLS-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "STKPT-R-73[port1]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "ECLS-R-73[port2]", "entityTypes": ["networkinterface"], "name": "port2", "_references": [{"_edgeType": "partOf", "_toUniqueId": "ECLS-R-73"},{"_edgeType": "contains", "_fromUniqueId": "ECLS-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "ECLS-R-73[port3]", "entityTypes": ["networkinterface"], "name": "port3", "_references": [{"_edgeType": "partOf", "_toUniqueId": "ECLS-R-73"},{"_edgeType": "contains", "_fromUniqueId": "ECLS-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "ECLS-R-73[port4]", "entityTypes": ["networkinterface"], "name": "port4", "_references": [{"_edgeType": "partOf", "_toUniqueId": "ECLS-R-73"},{"_edgeType": "contains", "_fromUniqueId": "ECLS-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "ECLS-R-73[port5]", "entityTypes": ["networkinterface"], "name": "port5", "_references": [{"_edgeType": "partOf", "_toUniqueId": "ECLS-R-73"},{"_edgeType": "contains", "_fromUniqueId": "ECLS-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "SMTWK-R-73[port3]"}]}
+
+
+V:{"_operation": "InsertReplace", "uniqueId": "OLDHM-R-73", "entityTypes": ["firewall"], "name": "OLDHM-R-73", "_references": [], "uptimeSeconds":259200, "model":"8804", "siteCountry":"GB","siteCity":"Manchester", "siteName":"Beyer Building", "geolocation":{"type": "Feature", "geometry": {"type": "Point", "coordinates": [ -2.2344434437458176, 53.46584593163584 ]}} }
+V:{"_operation": "InsertReplace", "uniqueId": "OLDHM-R-73[port1]", "entityTypes": ["networkinterface"], "name": "port1", "_references": [{"_edgeType": "partOf", "_toUniqueId": "OLDHM-R-73"},{"_edgeType": "contains", "_fromUniqueId": "OLDHM-R-73"}, {"_edgeType": "connectedTo", "_toUniqueId": "STKPT-R-73[port2]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "OLDHM-R-73[port2]", "entityTypes": ["networkinterface"], "name": "port2", "_references": [{"_edgeType": "partOf", "_toUniqueId": "OLDHM-R-73"},{"_edgeType": "contains", "_fromUniqueId": "OLDHM-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "ECLS-R-73[port2]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "OLDHM-R-73[port3]", "entityTypes": ["networkinterface"], "name": "port3", "_references": [{"_edgeType": "partOf", "_toUniqueId": "OLDHM-R-73"},{"_edgeType": "contains", "_fromUniqueId": "OLDHM-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "OLDHM-R-73[port4]", "entityTypes": ["networkinterface"], "name": "port4", "_references": [{"_edgeType": "partOf", "_toUniqueId": "OLDHM-R-73"},{"_edgeType": "contains", "_fromUniqueId": "OLDHM-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "EDNGTN-R-73[port3]"}]}
+
+
+# WLTS (Swindon)
+V:{"_operation": "InsertReplace", "uniqueId": "COTE-R-73", "entityTypes": ["router"], "name": "COTE-R-73", "_references": [], "uptimeSeconds":259200, "model":"8804", "siteCountry":"GB","siteCity":"Swindon", "siteName":"UK Space Agency", "geolocation":{"type": "Feature", "geometry": {"type": "Point", "coordinates": [ -1.7846140557471415, 51.566852234980615 ]}} }
+V:{"_operation": "InsertReplace", "uniqueId": "COTE-R-73[port1]", "entityTypes": ["networkinterface"], "name": "port1", "_references": [{"_edgeType": "partOf", "_toUniqueId": "COTE-R-73"},{"_edgeType": "contains", "_fromUniqueId": "COTE-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "COTE-R-73[port2]", "entityTypes": ["networkinterface"], "name": "port2", "_references": [{"_edgeType": "partOf", "_toUniqueId": "COTE-R-73"},{"_edgeType": "contains", "_fromUniqueId": "COTE-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "TMPLM-R-73[port3]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "COTE-R-73[port3]", "entityTypes": ["networkinterface"], "name": "port3", "_references": [{"_edgeType": "partOf", "_toUniqueId": "COTE-R-73"},{"_edgeType": "contains", "_fromUniqueId": "COTE-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "PTCSTR-R-73[port4]"}]}
+
+
+V:{"_operation": "InsertReplace", "uniqueId": "ORBTL-R-73", "entityTypes": ["hypervisor"], "name": "ORBTL-R-73", "_references": [], "uptimeSeconds":259200, "model":"8804", "siteCountry":"GB","siteCity":"Swindon", "siteName":"UK Space Agency",  "geolocation":{"type": "Feature", "geometry": {"type": "Point", "coordinates": [ -1.7846140557471415, 51.566852234980615 ]}} }
+V:{"_operation": "InsertReplace", "uniqueId": "ORBTL-R-73[port1]", "entityTypes": ["networkinterface"], "name": "port1", "_references": [{"_edgeType": "partOf", "_toUniqueId": "ORBTL-R-73"},{"_edgeType": "contains", "_fromUniqueId": "ORBTL-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "COTE-R-73[port1]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "ORBTL-R-73[port2]", "entityTypes": ["networkinterface"], "name": "port2", "_references": [{"_edgeType": "partOf", "_toUniqueId": "ORBTL-R-73"},{"_edgeType": "contains", "_fromUniqueId": "ORBTL-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "ORBTL-R-73[port3]", "entityTypes": ["networkinterface"], "name": "port3", "_references": [{"_edgeType": "partOf", "_toUniqueId": "ORBTL-R-73"},{"_edgeType": "contains", "_fromUniqueId": "ORBTL-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "WRMLY-R-73[port4]"}]}
+
+
+# CCB (Bristol)
+V:{"_operation": "InsertReplace", "uniqueId": "WRMLY-R-73", "entityTypes": ["router"], "name": "WRMLY-R-73", "_references": [], "uptimeSeconds":259200, "model":"8812", "siteCountry":"GB","siteCity":"Bristol", "siteName":"Aadrman",  "geolocation":{"type": "Feature", "geometry": {"type": "Point", "coordinates": [ -2.607647698707524, 51.44772522075078 ]}} }
+V:{"_operation": "InsertReplace", "uniqueId": "WRMLY-R-73[port1]", "entityTypes": ["networkinterface"], "name": "port1", "_references": [{"_edgeType": "partOf", "_toUniqueId": "WRMLY-R-73"},{"_edgeType": "contains", "_fromUniqueId": "WRMLY-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "WRMLY-R-73[port2]", "entityTypes": ["networkinterface"], "name": "port2", "_references": [{"_edgeType": "partOf", "_toUniqueId": "WRMLY-R-73"},{"_edgeType": "contains", "_fromUniqueId": "WRMLY-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "WRMLY-R-73[port3]", "entityTypes": ["networkinterface"], "name": "port3", "_references": [{"_edgeType": "partOf", "_toUniqueId": "WRMLY-R-73"},{"_edgeType": "contains", "_fromUniqueId": "WRMLY-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "WRMLY-R-73[port4]", "entityTypes": ["networkinterface"], "name": "port4", "_references": [{"_edgeType": "partOf", "_toUniqueId": "WRMLY-R-73"},{"_edgeType": "contains", "_fromUniqueId": "WRMLY-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "WRMLY-R-73[port5]", "entityTypes": ["networkinterface"], "name": "port5", "_references": [{"_edgeType": "partOf", "_toUniqueId": "WRMLY-R-73"},{"_edgeType": "contains", "_fromUniqueId": "WRMLY-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "WKGHM-R-73[port3]"}]}
+
+V:{"_operation": "InsertReplace", "uniqueId": "PCHWY-R-73", "entityTypes": ["loadbalancer"], "name": "PCHWY-R-73", "_references": [], "uptimeSeconds":259200, "model":"8804", "siteCountry":"GB","siteCity":"Bristol", "siteName":"Aardman",  "geolocation":{"type": "Feature", "geometry": {"type": "Point", "coordinates": [ -2.607647698707524, 51.44772522075078 ]}} }
+V:{"_operation": "InsertReplace", "uniqueId": "PCHWY-R-73[port1]", "entityTypes": ["networkinterface"], "name": "port1", "_references": [{"_edgeType": "partOf", "_toUniqueId": "PCHWY-R-73"},{"_edgeType": "contains", "_fromUniqueId": "PCHWY-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "WRMLY-R-73[port2]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "PCHWY-R-73[port2]", "entityTypes": ["networkinterface"], "name": "port2", "_references": [{"_edgeType": "partOf", "_toUniqueId": "PCHWY-R-73"},{"_edgeType": "contains", "_fromUniqueId": "PCHWY-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "TMPLM-R-73[port2]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "PCHWY-R-73[port3]", "entityTypes": ["networkinterface"], "name": "port3", "_references": [{"_edgeType": "partOf", "_toUniqueId": "PCHWY-R-73"},{"_edgeType": "contains", "_fromUniqueId": "PCHWY-R-73"} ,{"_edgeType": "connectedTo", "_toUniqueId": "CLCT-R-73[port3]"}]}
+
+
+V:{"_operation": "InsertReplace", "uniqueId": "TMPLM-R-73", "entityTypes": ["controller"], "name": "TMPLM-R-73", "_references": [], "uptimeSeconds":259200, "model":"8812", "siteCountry":"GB","siteCity":"Bristol", "siteName":"Aardman",  "geolocation":{"type": "Feature", "geometry": {"type": "Point", "coordinates": [ -2.607647698707524, 51.44772522075078 ]}} }
+V:{"_operation": "InsertReplace", "uniqueId": "TMPLM-R-73[port1]", "entityTypes": ["networkinterface"], "name": "port1", "_references": [{"_edgeType": "partOf", "_toUniqueId": "TMPLM-R-73"},{"_edgeType": "contains", "_fromUniqueId": "TMPLM-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "WRMLY-R-73[port1]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "TMPLM-R-73[port2]", "entityTypes": ["networkinterface"], "name": "port2", "_references": [{"_edgeType": "partOf", "_toUniqueId": "TMPLM-R-73"},{"_edgeType": "contains", "_fromUniqueId": "TMPLM-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "TMPLM-R-73[port3]", "entityTypes": ["networkinterface"], "name": "port3", "_references": [{"_edgeType": "partOf", "_toUniqueId": "TMPLM-R-73"},{"_edgeType": "contains", "_fromUniqueId": "TMPLM-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "TMPLM-R-73[port4]", "entityTypes": ["networkinterface"], "name": "port4", "_references": [{"_edgeType": "partOf", "_toUniqueId": "TMPLM-R-73"},{"_edgeType": "contains", "_fromUniqueId": "TMPLM-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "CVSHM-R-73[port4]"}]}
+
+
+# BKS (Reading)
+V:{"_operation": "InsertReplace", "uniqueId": "WKGHM-R-73", "entityTypes": ["router"], "name": "WKGHM-R-73", "_references": [], "uptimeSeconds":259200, "model":"8812", "siteCountry":"GB","siteCity":"Reading", "siteName":"Apex Plaza", "geolocation":{"type": "Feature", "geometry": {"type": "Point", "coordinates": [ -0.9698212286900514,51.45829943846235 ]}} }
+V:{"_operation": "InsertReplace", "uniqueId": "WKGHM-R-73[port1]", "entityTypes": ["networkinterface"], "name": "port1", "_references": [{"_edgeType": "partOf", "_toUniqueId": "WKGHM-R-73"},{"_edgeType": "contains", "_fromUniqueId": "WKGHM-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "WKGHM-R-73[port2]", "entityTypes": ["networkinterface"], "name": "port2", "_references": [{"_edgeType": "partOf", "_toUniqueId": "WKGHM-R-73"},{"_edgeType": "contains", "_fromUniqueId": "WKGHM-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "WKGHM-R-73[port3]", "entityTypes": ["networkinterface"], "name": "port3", "_references": [{"_edgeType": "partOf", "_toUniqueId": "WKGHM-R-73"},{"_edgeType": "contains", "_fromUniqueId": "WKGHM-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "WKGHM-R-73[port4]", "entityTypes": ["networkinterface"], "name": "port4", "_references": [{"_edgeType": "partOf", "_toUniqueId": "WKGHM-R-73"},{"_edgeType": "contains", "_fromUniqueId": "WKGHM-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "TTNM-R-73[port3]"}]}
+
+
+V:{"_operation": "InsertReplace", "uniqueId": "CLCT-R-73", "entityTypes": ["switch"], "name": "CLCT-R-73", "_references": [], "uptimeSeconds":259200, "model":"8804", "siteCountry":"GB","siteCity":"Reading", "siteName":"Apex Plaza",  "geolocation":{"type": "Feature", "geometry": {"type": "Point", "coordinates": [ -0.9698212286900514,51.45829943846235 ]}} }
+V:{"_operation": "InsertReplace", "uniqueId": "CLCT-R-73[port1]", "entityTypes": ["networkinterface"], "name": "port1", "_references": [{"_edgeType": "partOf", "_toUniqueId": "CLCT-R-73"},{"_edgeType": "contains", "_fromUniqueId": "CLCT-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "WKGHM-R-73[port2]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "CLCT-R-73[port2]", "entityTypes": ["networkinterface"], "name": "port2", "_references": [{"_edgeType": "partOf", "_toUniqueId": "CLCT-R-73"},{"_edgeType": "contains", "_fromUniqueId": "CLCT-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "CVSHM-R-73[port2]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "CLCT-R-73[port3]", "entityTypes": ["networkinterface"], "name": "port3", "_references": [{"_edgeType": "partOf", "_toUniqueId": "CLCT-R-73"},{"_edgeType": "contains", "_fromUniqueId": "CLCT-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "CLCT-R-73[port4]", "entityTypes": ["networkinterface"], "name": "port4", "_references": [{"_edgeType": "partOf", "_toUniqueId": "CLCT-R-73"},{"_edgeType": "contains", "_fromUniqueId": "CLCT-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "GNWCH-R-73[port3]"}]}
+
+
+V:{"_operation": "InsertReplace", "uniqueId": "CVSHM-R-73", "entityTypes": ["firewall"], "name": "CVSHM-R-73", "_references": [], "uptimeSeconds":259200, "model":"8812", "siteCountry":"GB","siteCity":"Reading", "siteName":"Apex Plaza", "geolocation":{"type": "Feature", "geometry": {"type": "Point", "coordinates": [ -0.9698212286900514,51.45829943846235 ]}} }
+
+V:{"_operation": "InsertReplace", "uniqueId": "CVSHM-R-73[port1]", "entityTypes": ["networkinterface"], "name": "port1", "_references": [{"_edgeType": "partOf", "_toUniqueId": "CVSHM-R-73"},{"_edgeType": "contains", "_fromUniqueId": "CVSHM-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "WKGHM-R-73[port1]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "CVSHM-R-73[port2]", "entityTypes": ["networkinterface"], "name": "port2", "_references": [{"_edgeType": "partOf", "_toUniqueId": "CVSHM-R-73"},{"_edgeType": "contains", "_fromUniqueId": "CVSHM-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "CVSHM-R-73[port3]", "entityTypes": ["networkinterface"], "name": "port3", "_references": [{"_edgeType": "partOf", "_toUniqueId": "CVSHM-R-73"},{"_edgeType": "contains", "_fromUniqueId": "CVSHM-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "CVSHM-R-73[port4]", "entityTypes": ["networkinterface"], "name": "port4", "_references": [{"_edgeType": "partOf", "_toUniqueId": "CVSHM-R-73"},{"_edgeType": "contains", "_fromUniqueId": "CVSHM-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "CVSHM-R-73[port5]", "entityTypes": ["networkinterface"], "name": "port5", "_references": [{"_edgeType": "partOf", "_toUniqueId": "CVSHM-R-73"},{"_edgeType": "contains", "_fromUniqueId": "CVSHM-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "HMSH-R-73[port3]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "CVSHM-R-73[port6]", "entityTypes": ["networkinterface"], "name": "port6", "_references": [{"_edgeType": "partOf", "_toUniqueId": "CVSHM-R-73"},{"_edgeType": "contains", "_fromUniqueId": "CVSHM-R-73"}]}
+
+
+# WMIDS (Birmingham)
+V:{"_operation": "InsertReplace", "uniqueId": "SHUL-R-73", "entityTypes": ["router"], "name": "SHUL-R-73", "_references": [], "uptimeSeconds":259200, "model":"8812", "siteCountry":"GB","siteCity":"Birmingham", "siteName":"Town Hall", "geolocation":{"type": "Feature", "geometry": {"type": "Point", "coordinates": [ -1.9036761657889656, 52.47954241958877 ]}} }
+V:{"_operation": "InsertReplace", "uniqueId": "SHUL-R-73[port1]", "entityTypes": ["networkinterface"], "name": "port1", "_references": [{"_edgeType": "partOf", "_toUniqueId": "SHUL-R-73"},{"_edgeType": "contains", "_fromUniqueId": "SHUL-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "SHUL-R-73[port2]", "entityTypes": ["networkinterface"], "name": "port2", "_references": [{"_edgeType": "partOf", "_toUniqueId": "SHUL-R-73"},{"_edgeType": "contains", "_fromUniqueId": "SHUL-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "SHUL-R-73[port3]", "entityTypes": ["networkinterface"], "name": "port3", "_references": [{"_edgeType": "partOf", "_toUniqueId": "SHUL-R-73"},{"_edgeType": "contains", "_fromUniqueId": "SHUL-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "SHUL-R-73[port4]", "entityTypes": ["networkinterface"], "name": "port4", "_references": [{"_edgeType": "partOf", "_toUniqueId": "SHUL-R-73"},{"_edgeType": "contains", "_fromUniqueId": "SHUL-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "SHUL-R-73[port5]", "entityTypes": ["networkinterface"], "name": "port5", "_references": [{"_edgeType": "partOf", "_toUniqueId": "SHUL-R-73"},{"_edgeType": "contains", "_fromUniqueId": "SHUL-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "LFTHS-R-73[port4]"}]}
+
+
+V:{"_operation": "InsertReplace", "uniqueId": "SMTWK-R-73", "entityTypes": ["sdWan"], "name": "SMTWK-R-73", "_references": [], "uptimeSeconds":259200, "model":"8812", "siteCountry":"GB","siteCity":"Birmingham", "siteName":"Town Hall", "geolocation":{"type": "Feature", "geometry": {"type": "Point", "coordinates": [  -1.9036761657889656, 52.47954241958877  ]}} }
+V:{"_operation": "InsertReplace", "uniqueId": "SMTWK-R-73[port1]", "entityTypes": ["networkinterface"], "name": "port1", "_references": [{"_edgeType": "partOf", "_toUniqueId": "SMTWK-R-73"},{"_edgeType": "contains", "_fromUniqueId": "SMTWK-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "SHUL-R-73[port2]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "SMTWK-R-73[port2]", "entityTypes": ["networkinterface"], "name": "port2", "_references": [{"_edgeType": "partOf", "_toUniqueId": "SMTWK-R-73"},{"_edgeType": "contains", "_fromUniqueId": "SMTWK-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "EDNGTN-R-73[port2]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "SMTWK-R-73[port3]", "entityTypes": ["networkinterface"], "name": "port3", "_references": [{"_edgeType": "partOf", "_toUniqueId": "SMTWK-R-73"},{"_edgeType": "contains", "_fromUniqueId": "SMTWK-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "SMTWK-R-73[port4]", "entityTypes": ["networkinterface"], "name": "port4", "_references": [{"_edgeType": "partOf", "_toUniqueId": "SMTWK-R-73"},{"_edgeType": "contains", "_fromUniqueId": "SMTWK-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "SMTWK-R-73[port5]", "entityTypes": ["networkinterface"], "name": "port5", "_references": [{"_edgeType": "partOf", "_toUniqueId": "SMTWK-R-73"},{"_edgeType": "contains", "_fromUniqueId": "SMTWK-R-73"}]}
+
+
+V:{"_operation": "InsertReplace", "uniqueId": "EDNGTN-R-73", "entityTypes": ["switch"], "name": "EDNGTN-R-73", "_references": [], "uptimeSeconds":259200, "model":"8812", "siteCountry":"GB","siteCity":"Birmingham", "siteName":"Town Hall", "geolocation":{"type": "Feature", "geometry": {"type": "Point", "coordinates": [  -1.9036761657889656, 52.47954241958877  ]}} }
+V:{"_operation": "InsertReplace", "uniqueId": "EDNGTN-R-73[port1]", "entityTypes": ["networkinterface"], "name": "port1", "_references": [{"_edgeType": "partOf", "_toUniqueId": "EDNGTN-R-73"},{"_edgeType": "contains", "_fromUniqueId": "EDNGTN-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "SHUL-R-73[port1]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "EDNGTN-R-73[port2]", "entityTypes": ["networkinterface"], "name": "port2", "_references": [{"_edgeType": "partOf", "_toUniqueId": "EDNGTN-R-73"},{"_edgeType": "contains", "_fromUniqueId": "EDNGTN-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "EDNGTN-R-73[port3]", "entityTypes": ["networkinterface"], "name": "port3", "_references": [{"_edgeType": "partOf", "_toUniqueId": "EDNGTN-R-73"},{"_edgeType": "contains", "_fromUniqueId": "EDNGTN-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "EDNGTN-R-73[port4]", "entityTypes": ["networkinterface"], "name": "port4", "_references": [{"_edgeType": "partOf", "_toUniqueId": "EDNGTN-R-73"},{"_edgeType": "contains", "_fromUniqueId": "EDNGTN-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "CVSHM-R-73[port6]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "EDNGTN-R-73[port5]", "entityTypes": ["networkinterface"], "name": "port5", "_references": [{"_edgeType": "partOf", "_toUniqueId": "EDNGTN-R-73"},{"_edgeType": "contains", "_fromUniqueId": "EDNGTN-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "HMSH-R-73[port5]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "EDNGTN-R-73[port6]", "entityTypes": ["networkinterface"], "name": "port6", "_references": [{"_edgeType": "partOf", "_toUniqueId": "EDNGTN-R-73"},{"_edgeType": "contains", "_fromUniqueId": "EDNGTN-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "FRSLY-R-73[port3]"}]}
+
+
+# YKS (Leeds)
+V:{"_operation": "InsertReplace", "uniqueId": "LFTHS-R-73", "entityTypes": ["router"], "name": "LFTHS-R-73", "_references": [], "uptimeSeconds":259200, "model":"8804", "siteCountry":"GB","siteCity":"Leeds", "siteName":"Midland Mills", "geolocation":{"type": "Feature", "geometry": {"type": "Point", "coordinates": [ -1.5559863357458994, 53.790708245101996 ]}} }
+V:{"_operation": "InsertReplace", "uniqueId": "LFTHS-R-73[port1]", "entityTypes": ["networkinterface"], "name": "port1", "_references": [{"_edgeType": "partOf", "_toUniqueId": "LFTHS-R-73"},{"_edgeType": "contains", "_fromUniqueId": "LFTHS-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "LFTHS-R-73[port2]", "entityTypes": ["networkinterface"], "name": "port2", "_references": [{"_edgeType": "partOf", "_toUniqueId": "LFTHS-R-73"},{"_edgeType": "contains", "_fromUniqueId": "LFTHS-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "LFTHS-R-73[port3]", "entityTypes": ["networkinterface"], "name": "port3", "_references": [{"_edgeType": "partOf", "_toUniqueId": "LFTHS-R-73"},{"_edgeType": "contains", "_fromUniqueId": "LFTHS-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "LFTHS-R-73[port4]", "entityTypes": ["networkinterface"], "name": "port4", "_references": [{"_edgeType": "partOf", "_toUniqueId": "LFTHS-R-73"},{"_edgeType": "contains", "_fromUniqueId": "LFTHS-R-73"}]}
+
+
+V:{"_operation": "InsertReplace", "uniqueId": "SCHLS-R-73", "entityTypes": ["switch"], "name": "SCHLS-R-73", "_references": [], "uptimeSeconds":259200, "model":"8804", "siteCountry":"GB","siteCity":"Leeds", "siteName":"Midland Mills", "geolocation":{"type": "Feature", "geometry": {"type": "Point", "coordinates": [  -1.5559863357458994, 53.790708245101996 ]}} }
+V:{"_operation": "InsertReplace", "uniqueId": "SCHLS-R-73[port1]", "entityTypes": ["networkinterface"], "name": "port1", "_references": [{"_edgeType": "partOf", "_toUniqueId": "SCHLS-R-73"},{"_edgeType": "contains", "_fromUniqueId": "SCHLS-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "LFTHS-R-73[port2]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "SCHLS-R-73[port2]", "entityTypes": ["networkinterface"], "name": "port2", "_references": [{"_edgeType": "partOf", "_toUniqueId": "SCHLS-R-73"},{"_edgeType": "contains", "_fromUniqueId": "SCHLS-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "FRSLY-R-73[port2]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "SCHLS-R-73[port3]", "entityTypes": ["networkinterface"], "name": "port3", "_references": [{"_edgeType": "partOf", "_toUniqueId": "SCHLS-R-73"},{"_edgeType": "contains", "_fromUniqueId": "SCHLS-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "SCHLS-R-73[port4]", "entityTypes": ["networkinterface"], "name": "port4", "_references": [{"_edgeType": "partOf", "_toUniqueId": "SCHLS-R-73"},{"_edgeType": "contains", "_fromUniqueId": "SCHLS-R-73"}, {"_edgeType": "connectedTo", "_toUniqueId": "SMTWK-R-73[port4]"}]}
+
+V:{"_operation": "InsertReplace", "uniqueId": "FRSLY-R-73", "entityTypes": ["router"], "name": "FRSLY-R-73", "_references": [], "uptimeSeconds":259200, "model":"8804", "siteCountry":"GB","siteCity":"Leeds", "siteName":"Midland Mills",  "geolocation":{"type": "Feature", "geometry": {"type": "Point", "coordinates": [ -1.5559863357458994, 53.790708245101996  ]}} }
+V:{"_operation": "InsertReplace", "uniqueId": "FRSLY-R-73[port1]", "entityTypes": ["networkinterface"], "name": "port1", "_references": [{"_edgeType": "partOf", "_toUniqueId": "FRSLY-R-73"},{"_edgeType": "contains", "_fromUniqueId": "FRSLY-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "LFTHS-R-73[port1]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "FRSLY-R-73[port2]", "entityTypes": ["networkinterface"], "name": "port2", "_references": [{"_edgeType": "partOf", "_toUniqueId": "FRSLY-R-73"},{"_edgeType": "contains", "_fromUniqueId": "FRSLY-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "FRSLY-R-73[port3]", "entityTypes": ["networkinterface"], "name": "port3", "_references": [{"_edgeType": "partOf", "_toUniqueId": "FRSLY-R-73"},{"_edgeType": "contains", "_fromUniqueId": "FRSLY-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "FRSLY-R-73[port4]", "entityTypes": ["networkinterface"], "name": "port4", "_references": [{"_edgeType": "partOf", "_toUniqueId": "FRSLY-R-73"},{"_edgeType": "contains", "_fromUniqueId": "FRSLY-R-73"}]}
+
+
+
+# GLA (London)
+V:{"_operation": "InsertReplace", "uniqueId": "TTNM-R-73", "entityTypes": ["router"], "name": "TTNM-R-73", "_references": [], "uptimeSeconds":259200, "model":"8812", "siteCountry":"GB","siteCity":"London", "siteName":"York Road", "geolocation":{"type": "Feature", "geometry": {"type": "Point", "coordinates": [ -0.11593185615208768, 51.503728481510166 ]}} }
+V:{"_operation": "InsertReplace", "uniqueId": "TTNM-R-73[port1]", "entityTypes": ["networkinterface"], "name": "port1", "_references": [{"_edgeType": "partOf", "_toUniqueId": "TTNM-R-73"},{"_edgeType": "contains", "_fromUniqueId": "TTNM-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "TTNM-R-73[port2]", "entityTypes": ["networkinterface"], "name": "port2", "_references": [{"_edgeType": "partOf", "_toUniqueId": "TTNM-R-73"},{"_edgeType": "contains", "_fromUniqueId": "TTNM-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "TTNM-R-73[port3]", "entityTypes": ["networkinterface"], "name": "port3", "_references": [{"_edgeType": "partOf", "_toUniqueId": "TTNM-R-73"},{"_edgeType": "contains", "_fromUniqueId": "TTNM-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "TTNM-R-73[port4]", "entityTypes": ["networkinterface"], "name": "port4", "_references": [{"_edgeType": "partOf", "_toUniqueId": "TTNM-R-73"},{"_edgeType": "contains", "_fromUniqueId": "TTNM-R-73"}, {"_edgeType": "connectedTo", "_toUniqueId": "GTWK-R-73[port2]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "TTNM-R-73[port5]", "entityTypes": ["networkinterface"], "name": "port5", "_references": [{"_edgeType": "partOf", "_toUniqueId": "TTNM-R-73"},{"_edgeType": "contains", "_fromUniqueId": "TTNM-R-73"}, {"_edgeType": "connectedTo", "_toUniqueId": "GTWK-R-73[port3]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "TTNM-R-73[port6]", "entityTypes": ["networkinterface"], "name": "port6", "_references": [{"_edgeType": "partOf", "_toUniqueId": "TTNM-R-73"},{"_edgeType": "contains", "_fromUniqueId": "TTNM-R-73"}, {"_edgeType": "connectedTo", "_toUniqueId": "SHUL-R-73[port4]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "TTNM-R-73[port7]", "entityTypes": ["networkinterface"], "name": "port7", "_references": [{"_edgeType": "partOf", "_toUniqueId": "TTNM-R-73"},{"_edgeType": "contains", "_fromUniqueId": "TTNM-R-73"}, {"_edgeType": "connectedTo", "_toUniqueId": "LFTHS-R-73[port3]"}]}
+
+
+V:{"_operation": "InsertReplace", "uniqueId": "HMSH-R-73", "entityTypes": ["firewall"], "name": "HMSH-R-73", "_references": [], "uptimeSeconds":259200, "model":"8812", "siteCountry":"GB","siteCity":"London", "siteName":"York Road", "geolocation":{"type": "Feature", "geometry": {"type": "Point", "coordinates": [  -0.11593185615208768, 51.503728481510166 ]}} }
+V:{"_operation": "InsertReplace", "uniqueId": "HMSH-R-73[port1]", "entityTypes": ["networkinterface"], "name": "port1", "_references": [{"_edgeType": "partOf", "_toUniqueId": "HMSH-R-73"},{"_edgeType": "contains", "_fromUniqueId": "HMSH-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "TTNM-R-73[port2]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "HMSH-R-73[port2]", "entityTypes": ["networkinterface"], "name": "port2", "_references": [{"_edgeType": "partOf", "_toUniqueId": "HMSH-R-73"},{"_edgeType": "contains", "_fromUniqueId": "HMSH-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "GNWCH-R-73[port2]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "HMSH-R-73[port3]", "entityTypes": ["networkinterface"], "name": "port3", "_references": [{"_edgeType": "partOf", "_toUniqueId": "HMSH-R-73"},{"_edgeType": "contains", "_fromUniqueId": "HMSH-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "HMSH-R-73[port4]", "entityTypes": ["networkinterface"], "name": "port4", "_references": [{"_edgeType": "partOf", "_toUniqueId": "HMSH-R-73"},{"_edgeType": "contains", "_fromUniqueId": "HMSH-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "CRWLY-R-73[port2]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "HMSH-R-73[port5]", "entityTypes": ["networkinterface"], "name": "port5", "_references": [{"_edgeType": "partOf", "_toUniqueId": "HMSH-R-73"},{"_edgeType": "contains", "_fromUniqueId": "HMSH-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "HMSH-R-73[port5]", "entityTypes": ["networkinterface"], "name": "port5", "_references": [{"_edgeType": "partOf", "_toUniqueId": "HMSH-R-73"},{"_edgeType": "contains", "_fromUniqueId": "HMSH-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "FRSLY-R-73[port4]"}]}
+
+
+V:{"_operation": "InsertReplace", "uniqueId": "GNWCH-R-73", "entityTypes": ["switch"], "name": "GNWCH-R-73", "_references": [], "uptimeSeconds":259200, "model":"8812", "siteCountry":"GB","siteCity":"London", "siteName":"York Road", "geolocation":{"type": "Feature", "geometry": {"type": "Point", "coordinates": [  -0.11593185615208768, 51.503728481510166 ]}} }
+V:{"_operation": "InsertReplace", "uniqueId": "GNWCH-R-73[port1]", "entityTypes": ["networkinterface"], "name": "port1", "_references": [{"_edgeType": "partOf", "_toUniqueId": "GNWCH-R-73"},{"_edgeType": "contains", "_fromUniqueId": "GNWCH-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "TTNM-R-73[port1]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "GNWCH-R-73[port2]", "entityTypes": ["networkinterface"], "name": "port2", "_references": [{"_edgeType": "partOf", "_toUniqueId": "GNWCH-R-73"},{"_edgeType": "contains", "_fromUniqueId": "GNWCH-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "GNWCH-R-73[port3]", "entityTypes": ["networkinterface"], "name": "port3", "_references": [{"_edgeType": "partOf", "_toUniqueId": "GNWCH-R-73"},{"_edgeType": "contains", "_fromUniqueId": "GNWCH-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "GNWCH-R-73[port4]", "entityTypes": ["networkinterface"], "name": "port4", "_references": [{"_edgeType": "partOf", "_toUniqueId": "GNWCH-R-73"},{"_edgeType": "contains", "_fromUniqueId": "GNWCH-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "SCHLS-R-73[port3]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "GNWCH-R-73[port5]", "entityTypes": ["networkinterface"], "name": "port5", "_references": [{"_edgeType": "partOf", "_toUniqueId": "GNWCH-R-73"},{"_edgeType": "contains", "_fromUniqueId": "GNWCH-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "SMTWK-R-73[port5]"}]}
+
+
+# WSSX (Crawley)
+V:{"_operation": "InsertReplace", "uniqueId": "GTWK-R-73", "entityTypes": ["router"], "name": "GTWK-R-73", "_references": [], "uptimeSeconds":259200, "model":"8804", "siteCountry":"GB","siteCity":"Gatwick", "siteName":"Hangar 9", "geolocation":{"type": "Feature", "geometry": {"type": "Point", "coordinates": [ -0.1863732376993994, 51.15682281536124 ]}} }
+V:{"_operation": "InsertReplace", "uniqueId": "GTWK-R-73[port1]", "entityTypes": ["networkinterface"], "name": "port1", "_references": [{"_edgeType": "partOf", "_toUniqueId": "GTWK-R-73"},{"_edgeType": "contains", "_fromUniqueId": "GTWK-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "GTWK-R-73[port2]", "entityTypes": ["networkinterface"], "name": "port2", "_references": [{"_edgeType": "partOf", "_toUniqueId": "GTWK-R-73"},{"_edgeType": "contains", "_fromUniqueId": "GTWK-R-73"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "GTWK-R-73[port3]", "entityTypes": ["networkinterface"], "name": "port3", "_references": [{"_edgeType": "partOf", "_toUniqueId": "GTWK-R-73"},{"_edgeType": "contains", "_fromUniqueId": "GTWK-R-73"}]}
+
+
+V:{"_operation": "InsertReplace", "uniqueId": "CRWLY-R-73", "entityTypes": ["router"], "name": "CRWLY-R-73", "_references": [], "uptimeSeconds":259200, "model":"8804", "siteCountry":"GB","siteCity":"Gatwick", "siteName":"Hangar 9", "geolocation":{"type": "Feature", "geometry": {"type": "Point", "coordinates": [  -0.1863732376993994, 51.15682281536124 ]}} }
+V:{"_operation": "InsertReplace", "uniqueId": "CRWLY-R-73[port1]", "entityTypes": ["networkinterface"], "name": "port1", "_references": [{"_edgeType": "partOf", "_toUniqueId": "CRWLY-R-73"},{"_edgeType": "contains", "_fromUniqueId": "CRWLY-R-73"},{"_edgeType": "connectedTo", "_toUniqueId": "GTWK-R-73[port1]"}]}
+V:{"_operation": "InsertReplace", "uniqueId": "CRWLY-R-73[port2]", "entityTypes": ["networkinterface"], "name": "port2", "_references": [{"_edgeType": "partOf", "_toUniqueId": "CRWLY-R-73"},{"_edgeType": "contains", "_fromUniqueId": "CRWLY-R-73"}]}
+
